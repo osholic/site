@@ -10,20 +10,18 @@ export default () => {
         children: [
           {
             path: "/",
-            component: () => import("./pages/index/index.vue")
+            component: () => import("./pages/index/index.vue"),
           },
           {
             path: "/about",
-            component: () => import("./pages/about/index.vue")
-          }
-        ]
-      }
-    ]
+            component: () => import("./pages/about/index.vue"),
+          },
+        ],
+      },
+    ],
   });
 
-  // Returned object will be used as the options
-  // for root Vue instance
   return {
-    router
+    router,
   };
 };

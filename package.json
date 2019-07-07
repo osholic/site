@@ -1,13 +1,12 @@
 {
   "name": "site",
+  "productName": "开源控",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "开源周边，正版授权，原创设计",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "poi --serve",
-    "lint": "eslint --ext .js,.vue src",
-    "format": "prettier-eslint \"src/**/*.js\" --write"
+    "dev": "poi --serve"
   },
   "keywords": [],
   "author": "",
@@ -15,16 +14,16 @@
   "devDependencies": {
     "@poi/plugin-eslint": "^12.0.0",
     "@poi/plugin-vue-static": "^12.0.7",
-    "eslint": "^6.0.1",
-    "eslint-plugin-vue": "^5.2.3",
     "poi": "^12.7.0",
-    "prettier-eslint-cli": "^5.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "bulma": "^0.7.5",
     "vue-router": "^3.0.7"
   }
 }
