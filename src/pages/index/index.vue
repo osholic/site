@@ -63,15 +63,29 @@
         </div>
       </div>
     </section>
+
+    <section class="section">
+      <div class="container has-text-centered">
+        <h3 class="title shop-title">开始购物吧！</h3>
+        <button class="button is-info">淘宝店铺</button>
+      </div>
+    </section>
   </div>
 </template>
 
+<script lang="ts">
+import AppForm from "@/components/form.vue";
+
+export default {
+  components: {
+    AppForm
+  }
+};
+</script>
+
 
 <style lang="stylus" scoped>
-.hero {
-}
-
-.section {
+.section:nth-of-type(2n) {
   background: #FBFBFD;
 }
 
@@ -121,12 +135,16 @@
     width: 100px;
   }
 
-  .feature {
+  .feature:not(:last-of-type) {
     margin-bottom: 80px;
   }
 }
 
 .reverse {
   flex-direction: row-reverse;
+}
+
+.shop-title {
+  margin-top: 0;
 }
 </style>
