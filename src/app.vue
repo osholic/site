@@ -1,20 +1,28 @@
 <template>
   <div>
     <header class="app-header">
-      <navbar />
+      <app-navbar />
     </header>
     <main class="app-content">
       <router-view />
     </main>
+
+    <app-footer />
   </div>
 </template>
 
 <script lang='ts'>
-import Navbar from "@/components/navbar/navbar.vue";
+import AppNavbar from "@/components/navbar.vue";
+import AppFooter from "@/components/footer.vue";
 
 export default {
   components: {
-    Navbar
+    AppNavbar,
+    AppFooter
+  },
+
+  created() {
+    document.body.classList.add("has-navbar-fixed-top");
   }
 };
 </script>
