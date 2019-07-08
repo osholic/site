@@ -6,14 +6,14 @@
           <div class="columns">
             <div class="column is-6 is-5-fullhd is-offset-1-fullhd">
               <h1 class="title">让开源更美好</h1>
-              <h2 class="desc">精美的设计，正版授权的开源周边。这里你总能找到一款你心仪的商品。</h2>
+              <h2 class="desc">精美的设计，正版授权的开源周边。在这里，你总能找到一款心仪的商品。</h2>
               <button class="button shop-btn is-info is-medium">进入淘宝店铺</button>
             </div>
             <div class="column is-6">
               <img
                 src="https://gcontent.robertsonmarketing.com/store/20160512512/assets/themes/theme1_en/images/home/jun19/banner-hero1.png"
                 alt
-              />
+              >
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
       <div class="features">
         <div class="columns feature is-multiline">
           <div class="column has-text-centered">
-            <img src="/svg/correct.svg" />
+            <img src="/svg/correct.svg" >
           </div>
           <div class="column text">
             <h3 class="title">正版授权</h3>
@@ -34,7 +34,7 @@
 
         <div class="columns feature is-multiline reverse">
           <div class="column has-text-centered">
-            <img src="/svg/rulers.svg" />
+            <img src="/svg/rulers.svg" >
           </div>
           <div class="column text">
             <h3 class="title">与众不同的设计</h3>
@@ -44,7 +44,7 @@
 
         <div class="columns feature is-multiline">
           <div class="column has-text-centered">
-            <img src="/svg/hot-coffee.svg" />
+            <img src="/svg/hot-coffee.svg" >
           </div>
           <div class="column text">
             <h3 class="title">捐赠开源项目</h3>
@@ -54,7 +54,7 @@
 
         <div class="columns feature is-multiline reverse">
           <div class="column has-text-centered">
-            <img src="/svg/graphic-tablet.svg" />
+            <img src="/svg/graphic-tablet.svg" >
           </div>
           <div class="column text">
             <h3 class="title">参与制作</h3>
