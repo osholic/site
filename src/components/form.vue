@@ -1,30 +1,30 @@
 <template>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" action="/form-success" method="POST" data-netlify="true">
     <div class="field">
       <label class="label">姓名</label>
       <div class="control">
-        <input class="input" type="text" name="name" />
+        <input required class="input" type="text" name="name" />
       </div>
     </div>
 
     <div class="field">
       <label class="label">邮箱</label>
       <div class="control">
-        <input class="input" type="email" name="email" />
+        <input required class="input" type="email" name="email" />
       </div>
     </div>
 
     <div class="field">
       <label class="label">项目链接</label>
       <div class="control">
-        <input class="input" type="url" name="repo" />
+        <input required class="input" type="url" name="repo" />
       </div>
     </div>
 
     <div class="field">
       <label class="label">备注</label>
       <div class="control">
-        <textarea class="textarea" name="message"></textarea>
+        <textarea required class="textarea" name="message"></textarea>
       </div>
     </div>
 

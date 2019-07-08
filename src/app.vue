@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <header class="app-header">
       <app-navbar />
     </header>
@@ -29,3 +29,20 @@ export default {
 
 
 <style src="bulma/css/bulma.css"></style>
+<style lang='stylus'>
+html, body
+  height 100%
+
+#app
+  min-height 100%
+  display flex
+
+.main
+  min-height 100%
+  display flex
+  flex-direction column
+  width 100%
+
+.app-content
+  flex 1
+</style>

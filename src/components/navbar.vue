@@ -2,17 +2,18 @@
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
+        <router-link class="navbar-item" to="/">
           <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> -->
           开源控
-        </a>
+        </router-link>
 
         <a
+          @click="toggle"
           role="button"
           class="navbar-burger burger"
           aria-label="menu"
+          :class="[showMenu && 'is-active']"
           aria-expanded="false"
-          data-target="navbarBasicExample"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -20,11 +21,11 @@
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div :class="[showMenu && 'is-active']" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item">博客</a>
 
-          <a class="navbar-item">关于我们</a>
+          <router-link class="navbar-item" to="/about">关于我们</router-link>
 
           <a class="navbar-item" href="https://spectrum.chat/osholic">Spectrum</a>
 
@@ -45,3 +46,18 @@
     </div>
   </nav>
 </template>
+
+
+<script lang='ts'>
+export default {
+  data: () => ({
+    showMenu: false
+  }),
+
+  methods: {
+    toggle() {
+      this.showMenu = !this.showMenu;
+    }
+  }
+};
+</script>

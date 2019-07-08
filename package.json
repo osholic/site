@@ -6,7 +6,8 @@
   "description": "开源周边，正版授权，原创设计",
   "main": "index.js",
   "scripts": {
-    "dev": "poi --serve"
+    "dev": "poi --serve",
+    "build": "poi --prod && cpy dist/index.html dist/200.html"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,9 @@
   "devDependencies": {
     "@poi/plugin-eslint": "^12.0.0",
     "@poi/plugin-vue-static": "^12.0.7",
+    "cpy-cli": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.0.0",
     "poi": "^12.7.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",

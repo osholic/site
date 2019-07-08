@@ -16,6 +16,10 @@ export default () => {
             path: "/about",
             component: () => import("./pages/about/index.vue"),
           },
+          {
+            path: "/form-success",
+            component: () => import("./pages/form-success/index.vue"),
+          },
         ],
       },
     ],
