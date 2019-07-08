@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "poi --serve",
-    "build": "poi --prod && cpy dist/index.html dist/200.html"
+    "build": "poi --prod && cpy dist/index.html dist --rename=200.html"
   },
   "keywords": [],
   "author": "",

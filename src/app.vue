@@ -12,6 +12,7 @@
 </template>
 
 <script lang='ts'>
+import "bulma/css/bulma.css";
 import AppNavbar from "@/components/navbar.vue";
 import AppFooter from "@/components/footer.vue";
 
@@ -22,13 +23,13 @@ export default {
   },
 
   created() {
-    document.body.classList.add("has-navbar-fixed-top");
+    if (!this.$isServer) {
+      document.body.classList.add("has-navbar-fixed-top");
+    }
   }
 };
 </script>
 
-
-<style src="bulma/css/bulma.css"></style>
 <style lang='stylus'>
 html, body
   height 100%
