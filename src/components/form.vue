@@ -15,19 +15,14 @@
     </div>
 
     <div class="field">
-      <label class="label">类型</label>
+      <label class="label">项目链接</label>
       <div class="control">
-        <div class="select">
-          <select name="type[]">
-            <option>开源作者</option>
-            <option>设计师</option>
-          </select>
-        </div>
+        <input class="input" type="url" name="repo" />
       </div>
     </div>
 
     <div class="field">
-      <label class="label">消息</label>
+      <label class="label">备注</label>
       <div class="control">
         <textarea class="textarea" name="message"></textarea>
       </div>

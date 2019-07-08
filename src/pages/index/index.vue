@@ -7,7 +7,7 @@
             <div class="column is-6 is-5-fullhd is-offset-1-fullhd">
               <h1 class="title">让开源更美好</h1>
               <h2 class="desc">精美的设计，正版授权的开源周边。这里你总能找到一款你心仪的商品。</h2>
-              <button class="button shop-btn is-info is-outlined">进入淘宝店铺</button>
+              <button class="button shop-btn is-info is-medium">进入淘宝店铺</button>
             </div>
             <div class="column is-6">
               <img
@@ -64,6 +64,24 @@
       </div>
     </section>
 
+    <section class="section contact">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <h3 class="subtitle">寻求合作</h3>
+            <p>如果您的开源项目有一定名气，并且想通过出售周边获取收益，欢迎您与我们联系。</p>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <app-form />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container has-text-centered">
         <h3 class="title shop-title">开始购物吧！</h3>
@@ -85,66 +103,61 @@ export default {
 
 
 <style lang="stylus" scoped>
-.section:nth-of-type(2n) {
-  background: #FBFBFD;
-}
+.section:nth-of-type(2n)
+  background #FBFBFD
 
-.title {
-  font-weight: 300;
-  font-size: 40px;
-  color: #333;
-  margin-top: 100px;
+.title
+  font-weight 300
+  font-size 40px
+  color #333
+  margin-top 100px
 
-  @media (max-width: 600px) {
-    margin-top: 0;
-  }
-}
+  @media (max-width: 600px)
+    margin-top 0
 
-.desc {
-  color: #747474;
-  font-size: 20px;
-  line-height: 1.8;
-  font-weight: 300;
-}
+.desc
+  color #747474
+  font-size 20px
+  line-height 1.8
+  font-weight 300
 
-.shop-btn {
-  margin-top: 40px;
-}
+.shop-btn
+  margin-top 40px
 
-.features {
-  max-width: 700px;
-  flex-grow: 1;
-  margin: 0 auto;
-  position: relative;
-  width: auto;
+.features
+  max-width 700px
+  flex-grow 1
+  margin 0 auto
+  position relative
+  width auto
 
-  .title {
-    margin-top: 0;
-    font-weight: 600;
-    line-height: 1.125;
-    font-size: 24px;
-  }
+  .title
+    margin-top 0
+    font-weight 600
+    line-height 1.125
+    font-size 24px
 
-  .subtitle {
-    font-size: 18px;
-    line-height: 26px;
-    padding-top: 10px;
-  }
+  .subtitle
+    font-size 18px
+    line-height 26px
+    padding-top 10px
 
-  img {
-    width: 100px;
-  }
+  img
+    width 100px
 
-  .feature:not(:last-of-type) {
-    margin-bottom: 80px;
-  }
-}
+  .feature:not(:last-of-type)
+    margin-bottom 80px
 
-.reverse {
-  flex-direction: row-reverse;
-}
+.reverse
+  flex-direction row-reverse
 
-.shop-title {
-  margin-top: 0;
-}
+.shop-title
+  margin-top 0
+
+.contact
+  max-width 1000px
+  flex-grow 1
+  margin 0 auto
+  position relative
+  width auto
 </style>

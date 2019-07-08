@@ -1,11 +1,10 @@
 <template>
-  <footer>
-    <!-- 待优化 -->
+  <footer class="footer">
     <div class="content has-text-centered">
       <div>
         Icons made by
         <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> messages.attribution.is_licensed_by
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> licensed by
         <a
           href="http://creativecommons.org/licenses/by/3.0/"
           title="Creative Commons BY 3.0"
@@ -15,3 +14,5 @@
     </div>
   </footer>
 </template>
+
+<style lang="stylus" scoped></style>
