@@ -17,6 +17,10 @@ import AppNavbar from "@/components/navbar.vue";
 import AppFooter from "@/components/footer.vue";
 
 export default {
+  head: {
+    title: "开源控"
+  },
+
   components: {
     AppNavbar,
     AppFooter
