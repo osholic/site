@@ -5,3 +5,11 @@ siteConfig:
 
 build:
   outDir: dist
+
+themeConfig:
+  links:
+    taobao: https://shop490941714.taobao.com
+    github: https://github.com/osholic
+    license: https://github.com/osholic/license
+    feedback: "mailto:feedback@osholic.com"
+    spectrum: https://spectrum.chat/osholic

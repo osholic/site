@@ -7,7 +7,7 @@
             <div class="column is-6 is-5-fullhd is-offset-1-fullhd">
               <h1 class="title">让开源更美好</h1>
               <h2 class="desc">精美的设计，正版授权的开源周边。在这里，你总能找到一款心仪的商品。</h2>
-              <button class="button shop-btn is-info is-medium">进入淘宝店铺</button>
+              <a class="button shop-btn is-info is-medium" :href="$themeConfig.links.taobao">进入淘宝店铺</a>
             </div>
             <div class="column is-6">
               <img
@@ -85,7 +85,7 @@
     <section class="section">
       <div class="container has-text-centered">
         <h3 class="title shop-title">开始购物吧！</h3>
-        <button class="button is-info">淘宝店铺</button>
+        <a class="button is-info" :href="$themeConfig.links.taobao">淘宝店铺</a>
       </div>
     </section>
   </div>
