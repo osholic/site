@@ -2,10 +2,10 @@
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <router-link class="navbar-item" to="/">
+        <saber-link class="navbar-item" to="/">
           <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> -->
           开源控
-        </router-link>
+        </saber-link>
 
         <a
           @click="toggle"
@@ -13,7 +13,7 @@
           class="navbar-burger burger"
           aria-label="menu"
           :class="[showMenu && 'is-active']"
-          aria-expanded="false"
+          :aria-expanded="showMenu"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -25,7 +25,7 @@
         <div class="navbar-end">
           <a class="navbar-item">博客</a>
 
-          <router-link class="navbar-item" to="/about">关于我们</router-link>
+          <saber-link class="navbar-item" to="/about">关于我们</saber-link>
 
           <a class="navbar-item" href="https://spectrum.chat/osholic">Spectrum</a>
 
@@ -48,7 +48,7 @@
 </template>
 
 
-<script lang='ts'>
+<script>
 export default {
   data: () => ({
     showMenu: false

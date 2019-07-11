@@ -5,3 +5,12 @@
     </div>
   </section>
 </template>
+
+<script>
+export const attributes = {
+  layout: "default",
+  permalink: "/form-success"
+};
+
+export default {};
+</script>

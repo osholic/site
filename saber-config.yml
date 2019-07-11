@@ -1,0 +1,7 @@
+siteConfig:
+  title: "开源控"
+  url: https://osholic.com
+  description: 开源周边，正版授权，原创设计
+
+build:
+  outDir: dist

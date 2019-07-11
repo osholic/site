@@ -1,0 +1,89 @@
+<template>
+  <div class="main">
+    <header class="app-header">
+      <app-navbar />
+    </header>
+    <main class="app-content">
+      <slot></slot>
+    </main>
+
+    <app-footer />
+  </div>
+</template>
+
+<script>
+import "bulma/css/bulma.css";
+import AppNavbar from "./navbar.vue";
+import AppFooter from "./footer.vue";
+
+export default {
+  components: {
+    AppNavbar,
+    AppFooter
+  },
+
+  computed: {
+    siteTitle() {
+      return this.$siteConfig.title || "Your Awesome Title";
+    }
+  },
+
+  props: ["page"],
+
+  head() {
+    const { excerpt } = this.page;
+    const { title } = this.page.attributes;
+    let { description } = this.$siteConfig;
+
+    return {
+      title: title ? `${title} - ${this.siteTitle}` : this.siteTitle,
+      meta: [
+        description && {
+          name: "description",
+          content: description
+        }
+      ].filter(Boolean),
+      link: this.$feed
+        ? [
+            {
+              rel: "alternate",
+              title: `${this.siteTitle} - Feed`,
+              type: `application/${
+                this.$feed.type === "atom"
+                  ? "atom+xml"
+                  : this.$feed.type === "rss"
+                  ? "rss+xml"
+                  : "json"
+              }`,
+              href: this.$feed.permalink
+            }
+          ].filter(Boolean)
+        : []
+    };
+  },
+
+  created() {
+    if (!this.$isServer) {
+      document.body.classList.add("has-navbar-fixed-top");
+    }
+  }
+};
+</script>
+
+<style lang='stylus'>
+html, body
+  height 100%
+
+#_saber
+  min-height 100%
+  display flex
+
+.main
+  min-height 100%
+  display flex
+  flex-direction column
+  width 100%
+
+.app-content
+  flex 1
+</style>
