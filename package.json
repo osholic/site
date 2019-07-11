@@ -4,6 +4,8 @@
     "dev": "saber",
     "build": "saber build"
   },
+  "repository": "osholic/site",
+  "homepage": "https://osholic.com",
   "devDependencies": {
     "saber": "latest",
     "stylus": "^0.54.5",
