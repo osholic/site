@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Wrap from "./components/Wrap.vue";
+import Wrap from "./components/wrap.vue";
 
 export default {
   components: {
