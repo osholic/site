@@ -5,7 +5,6 @@ siteConfig:
 
 build:
   outDir: dist
-  extractCSS: true
 
 themeConfig:
   links:
@@ -14,3 +13,9 @@ themeConfig:
     license: https://github.com/osholic/license
     feedback: "mailto:feedback@osholic.com"
     spectrum: https://spectrum.chat/osholic
+
+plugins:
+  - resolve: saber-plugin-netlify-redirect
+
+permalinks:
+  page: /:slug

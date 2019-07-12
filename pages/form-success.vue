@@ -8,8 +8,7 @@
 
 <script>
 export const attributes = {
-  layout: "default",
-  permalink: "/form-success"
+  layout: "default"
 };
 
 export default {};

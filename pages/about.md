@@ -1,6 +1,5 @@
 ---
 layout: content
-permalink: /about
 ---
 
 # 愿景
