@@ -43,6 +43,9 @@ export default {
           content: description
         }
       ].filter(Boolean),
+      bodyAttrs: {
+        class: "has-navbar-fixed-top"
+      },
       link: this.$feed
         ? [
             {
@@ -60,12 +63,6 @@ export default {
           ].filter(Boolean)
         : []
     };
-  },
-
-  created() {
-    if (!this.$isServer) {
-      document.body.classList.add("has-navbar-fixed-top");
-    }
   }
 };
 </script>
