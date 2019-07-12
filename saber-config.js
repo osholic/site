@@ -17,6 +17,14 @@ module.exports = {
       spectrum: "https://spectrum.chat/osholic"
     }
   },
-  plugins: [{ resolve: "saber-plugin-netlify-redirect" }],
+  plugins: [
+    {
+      resolve: "saber-plugin-netlify-redirect"
+    },
+    {
+      resolve: "saber-plugin-google-analytics",
+      options: { trackId: "UA-143752941-1" }
+    }
+  ],
   permalinks: { page: "/:slug" }
 };

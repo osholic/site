@@ -8,6 +8,7 @@
   "homepage": "https://osholic.com",
   "devDependencies": {
     "saber": "latest",
+    "saber-plugin-google-analytics": "^0.0.6",
     "saber-plugin-netlify-redirect": "^0.0.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"

@@ -4305,6 +4305,11 @@ saber-markdown@^0.0.9:
   resolved "https://registry.yarnpkg.com/saber-markdown/-/saber-markdown-0.0.9.tgz#b4ae1019f990b23ece893a5e9bac2155f195faa3"
   integrity sha512-Ze7sRoZZNNWNgybwEBHR1wPuCL8JwZdY/jn7fubEm3lWGfiis7g0coDeLZCymui2u+3nSbAb+AyCJF4+rn4QpA==
 
+saber-plugin-google-analytics@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/saber-plugin-google-analytics/-/saber-plugin-google-analytics-0.0.6.tgz#86e8cd8ab7227c74196f17bac487e36d48c4f0a3"
+  integrity sha512-ccTsMBp7oSKv5t9BE1vt5WlLs+DWtC9P4BOPosDLMjp0VKO/AroOrJ3clnib3rwJ+Fw/icOllNKDK0m4zDPJOg==
+
 saber-plugin-netlify-redirect@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/saber-plugin-netlify-redirect/-/saber-plugin-netlify-redirect-0.0.6.tgz#3d6e8079f11176666562c9c6c9f748e6c50c3ffe"
