@@ -5,6 +5,7 @@ siteConfig:
 
 build:
   outDir: dist
+  extractCSS: true
 
 themeConfig:
   links:
