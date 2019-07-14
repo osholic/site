@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* color */
+$primary: #FEB71F;
+$link: #FEB71F;
+$white: #fff;
+$grey-dark: #364656;
+$grey-light: #7F8792;
+$link-hover: $white;
+
+/* shadow */
+$shadow: 0 0 30px rgba(0, 0, 0, .06);
+
+/* radius */
+$border-radius: 8px;
+
+/* navbar */
+$navbar-height: 4rem;
+$navbar-item-hover-background-color: mix($white, $primary, 95%);
+$navbar-dropdown-border-top: none;
+$navbar-dropdown-item-hover-color: $primary;
+$navbar-dropdown-item-hover-background-color: mix($white, $primary, 95%);
+div.navbar-dropdown {
+  @media screen and (min-width: 1024px) {
+    box-shadow: $shadow;
+  }
+  border-radius: $border-radius;
+}
+a.navbar-burger:hover {
+  color: $grey-dark;
+  background-color: $white;
+}
+
+/* card */
+$card-shadow: $shadow;
+.card {
+  border-radius: $border-radius;
+}
+
+/* form */
+$label-color: $grey-light;
+$input-shadow: none;
+
+/* footer */
+$footer-background-color: $primary;
+footer.footer {
+  padding: 3rem 1.5rem;
+}
+
+@import "~bulma/bulma";

@@ -31,7 +31,7 @@
 
     <div class="field is-grouped">
       <div class="control">
-        <button type="submit" class="button is-link">提交</button>
+        <button type="submit" class="button is-primary">提交</button>
       </div>
     </div>
   </form>

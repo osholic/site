@@ -27,7 +27,7 @@
 
           <saber-link class="navbar-item" to="/about">关于我们</saber-link>
 
-          <a class="navbar-item" :href="$themeConfig.links.spectrum">Spectrum</a>
+          <a class="navbar-item" :href="$themeConfig.links.spectrum">聊天室</a>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">更多</a>
