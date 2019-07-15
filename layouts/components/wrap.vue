@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import "bulma/css/bulma.css";
+import "./mystyles.scss";
 import AppNavbar from "./navbar.vue";
 import AppFooter from "./footer.vue";
 
@@ -70,6 +70,9 @@ export default {
 <style lang='stylus'>
 html, body
   height 100%
+
+*
+  transition .2s
 
 #_saber
   min-height 100%

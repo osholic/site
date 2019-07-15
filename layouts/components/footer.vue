@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="content has-text-centered has-text-white">
       <div>&copy; 2019 开源控</div>
       <div>
         Made with
