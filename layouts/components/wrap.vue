@@ -46,7 +46,13 @@ export default {
       bodyAttrs: {
         class: "has-navbar-fixed-top"
       },
-      link: this.$feed
+      link: [
+        {
+          rel: "shortcut icon",
+          href: "/favicon.ico",
+          type: "image/x-icon"
+        }
+      ].concat(this.$feed
         ? [
             {
               rel: "alternate",
@@ -61,7 +67,7 @@ export default {
               href: this.$feed.permalink
             }
           ].filter(Boolean)
-        : []
+        : [])
     };
   }
 };
