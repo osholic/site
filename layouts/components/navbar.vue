@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <saber-link class="navbar-item" to="/">
-          <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" /> -->
+           <img src="/svg/logo.svg" width="70" />
           开源控
         </saber-link>
 

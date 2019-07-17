@@ -1,5 +1,7 @@
 # osholic
 
+<img src="./static/svg/logo.svg" height="200">
+
 ## Scripts
 
 ### `npm run dev`
