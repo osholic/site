@@ -11,12 +11,12 @@ module.exports = {
   themeConfig: {
     links: {
       taobao: "https://shop490941714.taobao.com",
-      github: "https://spectrum.chat/osholic?tab=chat",
+      github: "https://github.com/osholic",
       license: "https://github.com/osholic/license",
       request: "https://github.com/osholic/request",
       blog: "https://www.yuque.com/osholic",
       feedback: "mailto:feedback@osholic.com",
-      spectrum: "https://spectrum.chat/osholic"
+      spectrum: "https://spectrum.chat/osholic?tab=chat"
     }
   },
   plugins: [
