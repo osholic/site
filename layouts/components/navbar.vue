@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <saber-link class="navbar-item" to="/">
-           <img src="/svg/logo.svg" width="70" />
+          <img src="/svg/logo.svg" width="70" />
           开源控
         </saber-link>
 
@@ -23,7 +23,7 @@
 
       <div :class="[showMenu && 'is-active']" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item">博客</a>
+          <a class="navbar-item" :href="$themeConfig.links.blog">专栏</a>
 
           <saber-link class="navbar-item" to="/about">关于我们</saber-link>
 
@@ -35,6 +35,7 @@
             <div class="navbar-dropdown">
               <a class="navbar-item" :href="$themeConfig.links.taobao">淘宝店铺</a>
               <a class="navbar-item" :href="$themeConfig.links.github">GitHub</a>
+              <a class="navbar-item" :href="$themeConfig.links.request">产品请求</a>
               <a class="navbar-item" :href="$themeConfig.links.license">授权许可</a>
               <hr class="navbar-divider" />
               <a class="navbar-item" :href="$themeConfig.links.feedback">反馈</a>

@@ -11,8 +11,10 @@ module.exports = {
   themeConfig: {
     links: {
       taobao: "https://shop490941714.taobao.com",
-      github: "https://github.com/osholic",
+      github: "https://spectrum.chat/osholic?tab=chat",
       license: "https://github.com/osholic/license",
+      request: "https://github.com/osholic/request",
+      blog: "https://www.yuque.com/osholic",
       feedback: "mailto:feedback@osholic.com",
       spectrum: "https://spectrum.chat/osholic"
     }
