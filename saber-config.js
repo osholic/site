@@ -21,9 +21,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "saber-plugin-netlify-redirect"
-    },
-    {
       resolve: "saber-plugin-google-analytics",
       options: { trackId: "UA-143752941-1" }
     }
