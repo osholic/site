@@ -118,7 +118,6 @@ export default {
 
   created() {
     if (!this.$isServer) {
-      alert(/micromessenger/.test(navigator.userAgent.toLowerCase()));
       this.isWeixin = /micromessenger/.test(navigator.userAgent.toLowerCase());
     }
   }
