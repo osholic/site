@@ -9,7 +9,7 @@
               <h2 class="desc has-text-grey-light">精美的设计，正版授权的开源周边。在这里，你总能找到一款心仪的商品。</h2>
               <a
                 class="button shop-btn is-primary is-medium is-rounded"
-                :href="$themeConfig.links.taobao"
+                :href="isWeixin ? $themeConfig.links.wxtotaobao : $themeConfig.links.taobao"
               >进入淘宝店铺</a>
             </div>
             <div class="column is-6">
@@ -93,7 +93,7 @@
         <h3 class="title shop-title has-text-grey-dark">开始购物吧~</h3>
         <a
           class="button is-primary is-medium is-rounded"
-          :href="isWeixinBrowser ? $themeConfig.links.wxtotaobao : $themeConfig.links.taobao"
+          :href="isWeixin ? $themeConfig.links.wxtotaobao : $themeConfig.links.taobao"
         >淘宝店铺</a>
       </div>
     </section>
@@ -112,17 +112,14 @@ export default {
     AppForm
   },
 
-  data() {
-    return {
-      isWeixinBrowser: false
-    };
-  },
+  data: () => ({
+    isWeixin: false
+  }),
 
   created() {
     if (!this.$isServer) {
-      this.isWeixinBrowser = /micromessenger/.test(
-        navigator.userAgent.toLowerCase()
-      );
+      alert(/micromessenger/.test(navigator.userAgent.toLowerCase()));
+      this.isWeixin = /micromessenger/.test(navigator.userAgent.toLowerCase());
     }
   }
 };
