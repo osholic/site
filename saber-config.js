@@ -11,6 +11,8 @@ module.exports = {
   themeConfig: {
     links: {
       taobao: "https://shop490941714.taobao.com",
+      wxtotaobao:
+        "http://www.mnbvtgv.com/api/shop.html?cid=833917514&rsid=37257146",
       github: "https://github.com/osholic",
       license: "https://github.com/osholic/license",
       request: "https://github.com/osholic/request",
