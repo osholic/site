@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="hero">
+    <section class="hero jumbotron-container">
       <div class="hero-body">
         <div class="container">
           <div class="columns">
-            <div class="column is-6 is-5-fullhd is-offset-1-fullhd">
+            <div class="column is-6 is-5-fullhd is-offset-1-fullhd jumbotron-intro">
               <h1 class="title has-text-grey-dark">让开源更美好</h1>
               <h2 class="desc has-text-grey-light">精美的设计，正版授权的开源周边。在这里，你总能找到一款心仪的商品。</h2>
               <ClientOnly>
@@ -14,10 +14,10 @@
                 >进入淘宝店铺</a>
               </ClientOnly>
             </div>
-            <div class="column is-6">
+            <div class="column is-6 jumbotron-image-container">
               <img
-                class="jumbotron"
-                src="https://cdn.dribbble.com/users/13307/screenshots/5408637/attachments/1172091/characters_design_illustration_portfolio.jpg"
+                class="jumbotron-image"
+                src="/jumbotron.png"
                 alt
               />
             </div>
@@ -133,20 +133,39 @@ export default {
 .section:nth-of-type(2n)
   background #FAF8F4
 
-.jumbotron
+.jumbotron-container
   @media (min-width: 768px)
-    width 75vw
-    max-width unset
+    background-image url("/bg.png")
+    background-repeat no-repeat
+    background-size cover
+
+    .container
+      max-width none!important
+
+    .jumbotron-intro
+      display flex
+      flex-direction column
+      justify-content center
+      align-items flex-start
+
+.jumbotron-image-container
+  font-size 0
+
+.jumbotron-image
+  @media (min-width: 768px)
+    margin auto auto -3rem 1.5rem
+    
+  @media (max-width: 768px)
+    margin 0 -1.5rem -3rem -1.5rem
+    max-width 100vw
 
 .title
   font-weight bold
   font-size 52px
-  color #333
-  margin-top 80px
-
-  @media (max-width: 600px)
+  
+  @media (max-width: 768px)
     font-size 40px
-    margin-top 0
+    margin-top 60px
 
 .desc
   color #747474

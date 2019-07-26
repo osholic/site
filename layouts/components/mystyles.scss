@@ -42,7 +42,7 @@ $label-color: $grey-light;
 $input-shadow: none;
 
 /* footer */
-$footer-background-color: $primary;
+$footer-background-color: mix($white, $primary, 40%);
 footer.footer {
   padding: 3rem 1.5rem;
 }
