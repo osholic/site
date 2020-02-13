@@ -1,13 +1,14 @@
 <template>
   <div class="main">
-    <header class="app-header">
+    已下线
+    <!-- <header class="app-header">
       <app-navbar />
     </header>
     <main class="app-content">
       <slot></slot>
     </main>
 
-    <app-footer />
+    <app-footer /> -->
   </div>
 </template>
 
